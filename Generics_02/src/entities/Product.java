@@ -1,12 +1,11 @@
 package entities;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
 	private String name;
-	private double price;
+	private Double price;
 	
-	public Product(String name, double price) {
-		super();
+	public Product(String name, Double price) {
 		this.name = name;
 		this.price = price;
 	}
@@ -23,7 +22,7 @@ public class Product {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	
@@ -31,5 +30,9 @@ public class Product {
 	public String toString() {
 		return name +", "+ String.format("%.2f", price);
 	}
-	
+
+	@Override
+	public int compareTo(Product other) {
+		return price.compareTo(other.getPrice());
+	}
 }

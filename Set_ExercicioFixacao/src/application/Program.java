@@ -18,26 +18,31 @@ public class Program {
 	
 	for (int i = 0; i<n; i++) {
 		
+		System.out.print("Enter the student code: ");
 		int number = sc.nextInt();
 		a.add(number);
 		
 	}
 	
+	System.out.println();
 	System.out.print("How many students for course B? ");
 	n = sc.nextInt();
 	
 	for (int i = 0; i<n; i++) {
 		
+		System.out.print("Enter the student code: ");
 		int number = sc.nextInt();
 		b.add(number);
 		
 	}
 	
+	System.out.println();
 	System.out.print("How many students for course C? ");
 	n = sc.nextInt();
 	
 	for (int i = 0; i<n; i++) {
 		
+		System.out.print("Enter the student code: ");
 		int number = sc.nextInt();
 		c.add(number);
 		
